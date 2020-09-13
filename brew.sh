@@ -1,9 +1,18 @@
 #!/usr/bin/env bash
 
+# Make sure we’re using the latest Homebrew.
+brew update
+
+# Upgrade any already-installed formulae.
+brew upgrade
+
 # Install Brew Packages
 brew install python3
 brew install tree
 brew install stow
+
+# Install git
+brew install git
 
 #Install MacOS Applications
 brew cask install opera
@@ -12,5 +21,3 @@ brew cask install spotify
 brew cask install discord
 brew cask install virtualbox
 
-# Install git
-brew install git
