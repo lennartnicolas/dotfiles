@@ -26,4 +26,4 @@ code --install-extension ritwickdey.live-sass # Live Sass Compiler
 osascript -e 'quit app "Visual Studio Code"';
 
 echo ""
-echo "####ALL DONE"
+echo "#### ALL DONE"
