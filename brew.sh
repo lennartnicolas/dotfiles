@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Install git
+brew install git
+
 # Make sure we’re using the latest Homebrew.
 brew update
 
@@ -10,9 +13,6 @@ brew upgrade
 brew install python3
 brew install tree
 brew install stow
-
-# Install git
-brew install git
 
 #Install MacOS Applications
 brew cask install opera

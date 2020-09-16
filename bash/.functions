@@ -19,6 +19,9 @@ function shutdown() {
 
 function setup() {
 
+	# Clear Terminal Window
+	clear;
+
 	# Open Applications (using .aliases)
 	opera;
 	code;
