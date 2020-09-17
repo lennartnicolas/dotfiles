@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+# Moving Applications (installed by brew.sh) and System Applications to Dock
+
+# Remove all applications from Dock
+defaults write com.apple.dock persistent-apps -array
+
+
+# Creats array for extern applications
+declare -a Applications=("Opera.app" "Spotify.app" "Visual Studio Code.app" "Xcode.app" "Postgres.app" "Discord.app");
+declare -a SystemApplications=("Launchpad.app" "Mail.app" "System Preferences.app" "Calendar.app");
+
+# Setting up System Applications
+for ((i=0; i<${#SystemApplications[@]}; i++)); do        
+        defaults write com.apple.dock persistent-apps -array-add "<dict> <key>tile-data</key> <dict> <key>file-data</key> <dict> <key>_CFURLString</key> <string>/System/Applications/${SystemApplications[$i]}</string> <key>_CFURLStringType</key> <integer>0</integer></dict></dict></dict>"
+done
+
+# Setting up external Applications
+for ((i=0; i<${#Applications[@]}; i++)); do        
+        defaults write com.apple.dock persistent-apps -array-add "<dict> <key>tile-data</key> <dict> <key>file-data</key> <dict> <key>_CFURLString</key> <string>/Applications/${Applications[$i]}</string> <key>_CFURLStringType</key> <integer>0</integer></dict></dict></dict>"
+done
+
+# Locking Terminal to Dock
+defaults write com.apple.dock persistent-apps -array-add "<dict> <key>tile-data</key> <dict> <key>file-data</key> <dict> <key>_CFURLString</key> <string>/System/Applications/Utilities/Terminal.app</string> <key>_CFURLStringType</key> <integer>0</integer></dict></dict></dict>"
+
+
+# Restart Dock
+killall Dock

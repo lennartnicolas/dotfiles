@@ -20,4 +20,7 @@ brew cask install sourcetree
 brew cask install spotify
 brew cask install discord
 brew cask install virtualbox
-
+brew cask install visual-studio-code
+brew cask install postgres
+brew cask install figma
+brew cask install qt-creator
