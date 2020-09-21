@@ -24,3 +24,4 @@ brew cask install visual-studio-code
 brew cask install postgres
 brew cask install figma
 brew cask install qt-creator
+brew cask install pycharm

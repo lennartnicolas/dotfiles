@@ -2,6 +2,7 @@
 
 # Symlinking the dotfiles directory with stow(!)
 # Running brew.sh to make sure stow gets installed
+# Run this installation as root to symlink into root directory, type bash to use dotfiles or change default shell for root user (not recommended though)
 
 # Uncomment if stow isn't installed yet 
 # ./brew.sh
@@ -28,7 +29,7 @@ stowit() {
 }
 
 echo ""
-echo "Stowing apps for user: ${whoami}"
+echo "Stowing apps for user: ${USER}"
 
 # install apps available to local users and root
 for app in ${base[@]}; do
@@ -37,7 +38,7 @@ done
 
 # install only user space folders
 for app in ${useronly[@]}; do
-    if [[ "$(whoami)" = *"root"*]]; then
+    if !(( "${USER}" = "root")); then
         stowit "${HOME}" $app
     fi
 done
