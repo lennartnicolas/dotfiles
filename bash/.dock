@@ -6,17 +6,23 @@ defaults write com.apple.dock persistent-apps -array
 
 
 # Creats array for extern applications
-declare -a Applications=("Opera.app" "Spotify.app" "Visual Studio Code.app" "Xcode.app" "Postgres.app" "PSequel.app" "Discord.app");
+declare -a Applications=("Opera.app" "Spotify.app" "Visual Studio Code.app" "Xcode.app" "Postgres.app" "PSequel.app" "Discord.app" "Ableton Live 10 Suite.app" "Max.app"); # Add additional apps to the array
 declare -a SystemApplications=("Launchpad.app" "Mail.app" "System Preferences.app" "Calendar.app");
 
 # Setting up System Applications
 for ((i=0; i<${#SystemApplications[@]}; i++)); do        
+        test -e "/System/Applications/${SystemApplications[$i]}" # tests whether app exists or not
+        if [  ${?} -eq 0 ]; then
         defaults write com.apple.dock persistent-apps -array-add "<dict> <key>tile-data</key> <dict> <key>file-data</key> <dict> <key>_CFURLString</key> <string>/System/Applications/${SystemApplications[$i]}</string> <key>_CFURLStringType</key> <integer>0</integer></dict></dict></dict>"
+        fi
 done
 
 # Setting up external Applications
-for ((i=0; i<${#Applications[@]}; i++)); do        
+for ((i=0; i<${#Applications[@]}; i++)); do   
+        test -e "/Applications/${Applications[$i]}" 
+        if [  ${?} -eq 0 ]; then   
         defaults write com.apple.dock persistent-apps -array-add "<dict> <key>tile-data</key> <dict> <key>file-data</key> <dict> <key>_CFURLString</key> <string>/Applications/${Applications[$i]}</string> <key>_CFURLStringType</key> <integer>0</integer></dict></dict></dict>"
+        fi
 done
 
 # Locking Terminal to Dock

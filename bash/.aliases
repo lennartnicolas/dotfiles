@@ -10,6 +10,7 @@ alias opera="open -a Opera"
 alias spotify="open -a Spotify"
 alias code="code ."
 alias mail="open -a Mail"
+alias python="python3"
 
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"

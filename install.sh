@@ -10,14 +10,8 @@
 # Installing VS Code extensions
 ./vscode/extensions.sh
 
-# Run stowit.sh to symlink the dotfiles to the home directory (with stow)
+# Run stowit.sh to symlink dotfiles to the home directory
 ./stowit.sh
-
-# Copy the shell dotfiles to root directory to use dotfiles as sudo su
-#for file in ~/.{bashrc,bash_prompt,bash_profile,aliases,functions,exports}; do
-#    sudo cp $file /var/root; # MacOS root directory 
-#done;
-#unset file;
 
 echo ""
 echo "#### succesfully installed"
