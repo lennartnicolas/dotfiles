@@ -11,6 +11,7 @@ alias spotify="open -a Spotify"
 alias code="code ."
 alias mail="open -a Mail"
 alias python="python3"
+alias resize="printf '\e[8;50;140t'; " # add this command to set the window to the top left corner: printf '\e[3;0;0t'
 
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"

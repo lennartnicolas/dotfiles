@@ -25,3 +25,5 @@ brew cask install postgres
 brew cask install figma
 brew cask install qt-creator
 brew cask install pycharm
+brew cask install spectacle
+brew cask install chrome
