@@ -43,5 +43,8 @@ for app in ${useronly[@]}; do
     fi
 done
 
+# Stow settings.json for vscode theme
+stow -v -R -t "$HOME/Library/Application Support/Code/User" --dir=$HOME/code/dotfiles/vscode/ settings 
+
 echo ""
 echo "#### ALL DONE"

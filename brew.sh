@@ -13,6 +13,7 @@ brew upgrade
 brew install python3
 brew install tree
 brew install stow
+brew install node
 
 #Install MacOS Applications
 brew cask install opera

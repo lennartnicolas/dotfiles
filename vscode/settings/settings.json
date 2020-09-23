@@ -1,0 +1,13 @@
+{
+    "window.zoomLevel": 0,
+    "files.associations": {
+        ".*": "shellscript"    
+    },
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "html.format.contentUnformatted": "",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Solarized Light",
+    "python.pythonPath": "/usr/local/bin/python3"
+}
+
