@@ -8,6 +8,11 @@
     "html.format.contentUnformatted": "",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.colorTheme": "Solarized Light",
-    "python.pythonPath": "/usr/local/bin/python3"
+    "python.pythonPath": "/usr/local/bin/python3",
+    "code-runner.executorMap": {
+        "python": "$pythonPath -u $fullFileName"
+    },
+    "code-runner.showExecutionMessage": false,
+    "code-runner.clearPreviousOutput": true
 }
 

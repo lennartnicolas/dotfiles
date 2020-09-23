@@ -13,6 +13,8 @@ fi
 code --install-extension ms-python.python # Python 3
 code --install-extension ms-vscode.cpptools # C++
 code --install-extension ritwickdey.liveserver # Live-Server
+code --install-extension ms-azuretools.vscode-docker # Docker 
+code --install-extension formulahendry.code-runner # Code Runner
 
 code --install-extension coenraads.bracket-pair-colorizer-2 # Bracket Colorizer
 code --install-extension dotjoshjohnson.xml # XML Tools

@@ -14,6 +14,7 @@ brew install python3
 brew install tree
 brew install stow
 brew install node
+brew install chrome
 
 #Install MacOS Applications
 brew cask install opera
@@ -25,6 +26,5 @@ brew cask install visual-studio-code
 brew cask install postgres
 brew cask install figma
 brew cask install qt-creator
-brew cask install pycharm
 brew cask install spectacle
-brew cask install chrome
+brew cask install docker
