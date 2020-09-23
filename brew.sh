@@ -14,10 +14,10 @@ brew install python3
 brew install tree
 brew install stow
 brew install node
-brew install chrome
 
 #Install MacOS Applications
 brew cask install opera
+brew cask install google-chrome
 brew cask install sourcetree
 brew cask install spotify
 brew cask install discord
