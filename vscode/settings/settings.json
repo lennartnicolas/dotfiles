@@ -7,7 +7,10 @@
     "explorer.confirmDragAndDrop": false,
     "html.format.contentUnformatted": "",
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "Solarized Light",
+    "workbench.colorTheme": "Solarized Dark",
+    "workbench.colorCustomizations":{
+
+    },
     "python.pythonPath": "/usr/local/bin/python3",
     "code-runner.executorMap": {
         "python": "$pythonPath -u $fullFileName"

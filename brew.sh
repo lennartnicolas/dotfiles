@@ -18,6 +18,7 @@ brew install node
 #Install MacOS Applications
 brew cask install opera
 brew cask install google-chrome
+brew cask install adobe-acrobat-reader
 brew cask install sourcetree
 brew cask install spotify
 brew cask install discord
