@@ -1,14 +1,16 @@
 #!/usr/bin/env bash
 
 # shutdown
-function shutdown() {
+function shut() {
+	# Killall Applications
 
-	# Kill main applications
-	osascript -e 'quit app "Opera"';
-	osascript -e 'quit app "Mail"';
-	osascript -e 'quit app "Spotify"';
-	osascript -e 'quit app "Finder"';
-	osascript -e 'quit app "Visual Studio Code"';
+	for app in /Applications/*.app; do	
+			osascript -e "quit app \"$(basename "$app" .app)\"";&> /dev/null
+	done
+
+	for sys in System/Applications/*.app; do	
+			osascript -e "quit app \"$(basename "$sys" .app)\"";&> /dev/null
+	done
 
 	# Mute the output
     osascript -e 'set volume output muted true' ; 
@@ -27,6 +29,7 @@ function setup() {
 	code;
 	spotify; 
 	mail;
+	
 }
 
 # Create a new directory and enter it
