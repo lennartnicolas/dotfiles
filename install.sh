@@ -10,8 +10,11 @@
 # Installing VS Code extensions
 ./vscode/extensions.sh
 
+# Installing python packages
+./vscode/pip-installer.sh
+
 # Run stowit.sh to symlink dotfiles to the home directory
 ./stowit.sh
 
 echo ""
-echo "#### succesfully installed"
+echo "Dotfiles installed succesfully--"

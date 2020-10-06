@@ -29,3 +29,6 @@ brew cask install figma
 brew cask install qt-creator
 brew cask install spectacle
 brew cask install docker
+
+echo ""
+echo "Brew Packages installed succesfully--"

@@ -47,4 +47,4 @@ done
 stow -v -R -t "$HOME/Library/Application Support/Code/User" --dir=$HOME/code/dotfiles/vscode/ settings 
 
 echo ""
-echo "#### ALL DONE"
+echo "Everything's stowed--"

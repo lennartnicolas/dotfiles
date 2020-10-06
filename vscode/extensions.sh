@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # Installing preferred extensions for VS Code
 
 # Check if VS Code is installed, if not, return error.
@@ -28,4 +29,4 @@ code --install-extension ritwickdey.live-sass # Live Sass Compiler
 osascript -e 'quit app "Visual Studio Code"';
 
 echo ""
-echo "#### ALL DONE"
+echo "Visual Studio Code Extensions installed succesfully--"
