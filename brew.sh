@@ -29,6 +29,7 @@ brew cask install figma
 brew cask install qt-creator
 brew cask install spectacle
 brew cask install docker
+brew cask install openoffice
 
 echo ""
 echo "Brew Packages installed succesfully--"
