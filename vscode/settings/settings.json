@@ -1,8 +1,11 @@
 {
     "window.zoomLevel": 0,
+    "emmet.includeLanguages": {"django-html": "html"},
     "files.associations": {
-        ".*": "shellscript"    
+        ".*": "shellscript",
+        "*.html": "html"
     },
+    "explorer.compactFolders": false,
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     "html.format.contentUnformatted": "",
@@ -16,6 +19,6 @@
         "python": "$pythonPath -u $fullFileName"
     },
     "code-runner.showExecutionMessage": false,
-    "code-runner.clearPreviousOutput": true
+    "code-runner.clearPreviousOutput": true,
 }
 

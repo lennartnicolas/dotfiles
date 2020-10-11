@@ -24,6 +24,8 @@ code --install-extension pkief.material-icon-theme # Material Icon Theme
 code --install-extension formulahendry.auto-close-tag # Auto close tags for html
 code --install-extension esbenp.prettier-vscode # Prettier
 code --install-extension ritwickdey.live-sass # Live Sass Compiler
+code --install-extension sidthesloth.html5-boilerplate # html snippets
+code --install-extension abusaidm.html-snippets
 
 # Close VS Code
 osascript -e 'quit app "Visual Studio Code"';
