@@ -26,6 +26,7 @@ code --install-extension esbenp.prettier-vscode # Prettier
 code --install-extension ritwickdey.live-sass # Live Sass Compiler
 code --install-extension sidthesloth.html5-boilerplate # html snippets
 code --install-extension abusaidm.html-snippets
+code --install-extension ms-vscode.cmake-tools
 
 # Close VS Code
 osascript -e 'quit app "Visual Studio Code"';

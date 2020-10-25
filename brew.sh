@@ -30,6 +30,8 @@ brew cask install qt-creator
 brew cask install spectacle
 brew cask install docker
 brew cask install openoffice
+brew cask install postman
+brew cask install forticlient
 
 echo ""
 echo "Brew Packages installed succesfully--"
