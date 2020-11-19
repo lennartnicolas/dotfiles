@@ -32,6 +32,7 @@ brew cask install docker
 brew cask install openoffice
 brew cask install postman
 brew cask install forticlient
+brew cask install geogebra
 
 echo ""
 echo "Brew Packages installed succesfully--"

@@ -6,7 +6,7 @@ defaults write com.apple.dock persistent-apps -array
 
 
 # Creats array for extern applications
-declare -a Applications=("Opera.app" "Spotify.app" "Visual Studio Code.app" "Xcode.app" "Postgres.app" "PSequel.app" "Discord.app" "Ableton Live 10 Suite.app" "Max.app"); # Add additional apps to the array
+declare -a Applications=("Opera.app" "Spotify.app" "Visual Studio Code.app" "Xcode.app" "Postgres.app" "PSequel.app" "Discord.app" "Ableton Live 10 Suite.app" "Max.app" "Playgrounds.app" "Postman.app"); # Add additional apps to the array
 declare -a SystemApplications=("Launchpad.app" "Mail.app" "System Preferences.app" "Calendar.app");
 
 # Setting up System Applications
