@@ -16,23 +16,24 @@ brew install stow
 brew install node
 
 #Install MacOS Applications
-brew cask install opera
-brew cask install google-chrome
-brew cask install adobe-acrobat-reader
-brew cask install sourcetree
-brew cask install spotify
-brew cask install discord
-brew cask install virtualbox
-brew cask install visual-studio-code
-brew cask install postgres
-brew cask install figma
-brew cask install qt-creator
-brew cask install spectacle
-brew cask install docker
-brew cask install openoffice
-brew cask install postman
-brew cask install forticlient
-brew cask install geogebra
+brew install --cask opera
+brew install --cask google-chrome
+brew install --cask adobe-acrobat-reader
+brew install --cask sourcetree
+brew install --cask spotify
+brew install --cask discord
+brew install --cask virtualbox
+brew install --cask visual-studio-code
+brew install --cask postgres
+brew install --cask figma
+brew install --cask qt-creator
+brew install --cask spectacle
+brew install --cask docker
+brew install --cask openoffice
+brew install --cask postman
+brew install --cask forticlient
+brew install --cask geogebra
+brew install --cask blender
 
 echo ""
 echo "Brew Packages installed succesfully--"
