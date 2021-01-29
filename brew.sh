@@ -14,6 +14,7 @@ brew install python3
 brew install tree
 brew install stow
 brew install node
+brew install wget
 
 #Install MacOS Applications
 brew install --cask opera
