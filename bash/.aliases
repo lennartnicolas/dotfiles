@@ -64,3 +64,6 @@ alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 
 # Show wifi properties
 alias wifi="/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -I"
+
+# Git Log with colors
+alias gitlg="git log --oneline --graph --decorate --all"
