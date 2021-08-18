@@ -15,6 +15,10 @@ brew install tree
 brew install stow
 brew install node
 brew install wget
+brew install gcc
+brew install cmake
+brew install glm
+brew install boost
 
 #Install MacOS Applications
 brew install --cask opera
@@ -35,6 +39,10 @@ brew install --cask postman
 brew install --cask forticlient
 brew install --cask geogebra
 brew install --cask blender
+brew install --cask slack
+brew install --cask cycling74-max
+brew install --cask zoom
+
 
 echo ""
 echo "Brew Packages installed succesfully--"

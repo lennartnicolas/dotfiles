@@ -21,3 +21,7 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 
 # Add psql to `$PATH` for Postgres.app
 export PATH="/Applications/Postgres.app/Contents/Versions/12/bin:$PATH"
+
+# CMake Env Variables
+export CC=/usr/local/opt/llvm/bin/clang
+export CXX=/usr/local/opt/llvm/bin/clang++
