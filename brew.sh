@@ -19,6 +19,10 @@ brew install gcc
 brew install cmake
 brew install glm
 brew install boost
+brew install eigen
+brew install xtensor
+brew install opencv
+brew install dlib
 
 #Install MacOS Applications
 brew install --cask opera
